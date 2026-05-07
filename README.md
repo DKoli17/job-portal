@@ -2,7 +2,7 @@
 
 A production-grade full-stack job portal built with **React**, **Node.js/Express**, and **MongoDB**. Features JWT authentication, role-based access, resume uploads to Cloudinary, and real email notifications.
 
-![Home Page](https://raw.githubusercontent.com/YOUR_USERNAME/job-portal/main/preview.png)
+![Home Page](https://res.cloudinary.com/dujvyvz1q/image/upload/v1778142594/Screenshot_2026-05-07_135643_tvmmic.png)
 
 ---
 
