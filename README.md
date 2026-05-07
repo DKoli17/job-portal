@@ -5,6 +5,9 @@ A production-grade full-stack job portal built with **React**, **Node.js/Express
 ![Home Page](https://res.cloudinary.com/dujvyvz1q/image/upload/v1778142594/Screenshot_2026-05-07_135643_tvmmic.png)
 
 ---
+## Deployed via Vercel
+
+[Link](https://job-portal-eozx.vercel.app/)
 
 ## ✨ Features
 
