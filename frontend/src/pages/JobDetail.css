@@ -1,0 +1,108 @@
+.job-detail-layout {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.job-main { display: flex; flex-direction: column; gap: 1.25rem; }
+
+/* Header */
+.job-detail-header { padding: 2rem; }
+
+.jd-top { display: flex; gap: 1.2rem; margin-bottom: 1.5rem; align-items: flex-start; }
+
+.jd-company-logo {
+  width: 64px; height: 64px;
+  border-radius: var(--radius-lg);
+  background: var(--bg-input);
+  border: 1px solid var(--border);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--primary-light);
+  flex-shrink: 0;
+}
+
+.jd-title { font-size: 1.5rem; font-weight: 800; color: var(--text-primary); margin-bottom: 0.3rem; }
+.jd-company { color: var(--primary-light); font-weight: 600; font-size: 1rem; }
+.company-link { color: var(--text-secondary); font-size: 0.82rem; text-decoration: underline; }
+
+.jd-meta-row { display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem; }
+.jd-meta-item { display: flex; align-items: center; gap: 0.35rem; color: var(--text-secondary); font-size: 0.85rem; }
+
+.jd-tags { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+
+.jd-apply-area { display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap; }
+
+.applied-badge {
+  display: flex; align-items: center; gap: 0.5rem;
+  color: #34d399; font-weight: 700; font-size: 1rem;
+}
+
+.apply-note { color: var(--text-muted); font-size: 0.9rem; }
+
+.deadline-info {
+  display: flex; align-items: center; gap: 0.4rem;
+  color: var(--text-muted); font-size: 0.82rem;
+}
+
+/* Sections */
+.job-section { padding: 1.75rem; }
+.job-section h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 1rem; }
+
+.job-desc-text { color: var(--text-secondary); line-height: 1.8; white-space: pre-wrap; }
+
+.req-list { list-style: none; display: flex; flex-direction: column; gap: 0.6rem; }
+.req-list li {
+  padding-left: 1.25rem;
+  position: relative;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+.req-list li::before {
+  content: '▸';
+  position: absolute; left: 0;
+  color: var(--primary-light);
+}
+
+.job-skills-list { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+
+/* Sidebar */
+.job-sidebar { position: sticky; top: 84px; display: flex; flex-direction: column; gap: 1.25rem; }
+
+.sidebar-card { padding: 1.5rem; }
+.sidebar-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 1.25rem; color: var(--text-primary); }
+
+.overview-list { display: flex; flex-direction: column; gap: 0.75rem; }
+.overview-item { display: flex; justify-content: space-between; padding-bottom: 0.75rem; border-bottom: 1px solid var(--border); }
+.overview-item:last-child { border-bottom: none; padding-bottom: 0; }
+.overview-label { color: var(--text-muted); font-size: 0.82rem; }
+.overview-value { color: var(--text-primary); font-size: 0.85rem; font-weight: 600; text-align: right; }
+.capitalize { text-transform: capitalize; }
+
+.recruiter-info { display: flex; gap: 0.9rem; align-items: center; }
+.recruiter-avatar { width: 42px; height: 42px; border-radius: 50%; background: var(--gradient-primary); display: flex; align-items: center; justify-content: center; font-weight: 700; color: white; flex-shrink: 0; }
+.recruiter-name { font-weight: 700; font-size: 0.95rem; }
+.recruiter-company { color: var(--text-secondary); font-size: 0.82rem; }
+
+/* File Upload */
+.file-upload-area {
+  border: 2px dashed var(--border);
+  border-radius: var(--radius-md);
+  padding: 2rem;
+  text-align: center;
+  cursor: pointer;
+  transition: var(--transition);
+  color: var(--text-secondary);
+  display: flex; flex-direction: column; align-items: center; gap: 0.5rem;
+  font-size: 0.88rem;
+}
+.file-upload-area:hover { border-color: var(--primary); color: var(--primary-light); }
+.file-upload-area svg { color: var(--text-muted); }
+
+.modal-actions { display: flex; gap: 0.75rem; justify-content: flex-end; margin-top: 1.5rem; }
+
+@media (max-width: 1024px) {
+  .job-detail-layout { grid-template-columns: 1fr; }
+  .job-sidebar { position: static; }
+}

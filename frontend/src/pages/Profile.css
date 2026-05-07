@@ -1,0 +1,52 @@
+.profile-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.profile-sidebar { position: sticky; top: 84px; }
+
+.profile-hero {
+  padding: 2rem 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.profile-avatar-xl {
+  width: 88px; height: 88px;
+  border-radius: 50%;
+  background: var(--gradient-primary);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 2.2rem; font-weight: 800; color: white;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 8px 24px rgba(99, 102, 241, 0.3);
+}
+
+.profile-name-lg { font-size: 1.2rem; font-weight: 800; }
+.profile-email { color: var(--text-secondary); font-size: 0.82rem; }
+.profile-role-badge { margin-top: 0.25rem; }
+.profile-company, .profile-location { display: flex; align-items: center; gap: 0.4rem; color: var(--text-secondary); font-size: 0.82rem; margin-top: 0.15rem; }
+
+.profile-main { display: flex; flex-direction: column; gap: 1.25rem; }
+
+.profile-tabs {
+  display: flex;
+  gap: 0.5rem;
+  background: var(--bg-surface);
+  padding: 0.4rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  width: fit-content;
+  margin-bottom: 0.25rem;
+}
+
+.section-card-title { font-size: 1.1rem; font-weight: 700; margin-bottom: 1.5rem; }
+
+@media (max-width: 1024px) {
+  .profile-layout { grid-template-columns: 1fr; }
+  .profile-sidebar { position: static; }
+}
