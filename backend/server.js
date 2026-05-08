@@ -61,13 +61,8 @@ app.use((err, req, res, next) => {
   });
 });
 
-// Local dev — only listen when NOT running on Vercel
-if (process.env.NODE_ENV !== 'production') {
-  const PORT = process.env.PORT || 5000;
-  app.listen(PORT, () => {
-    console.log(`🚀 Server running on http://localhost:${PORT}`);
-  });
-}
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+  console.log(`🚀 Server running on port ${PORT}`);
+});
 
-// Export for Vercel serverless
-module.exports = app;
