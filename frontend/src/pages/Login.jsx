@@ -94,7 +94,8 @@ const Login = () => {
         {/* Demo Credentials */}
         <div className="demo-creds">
           <p className="demo-title">🔑 Demo Credentials</p>
-          <p>Admin: <code>admin@jobportal.com</code> / <code>admin123</code></p>
+          <p>Recruiter:  <code>recruiter@techcorp.com</code> / <code>password123</code></p>
+          <p>Job Seeker: <code>seeker@example.com</code> / <code>password123</code></p>
         </div>
 
         <p className="auth-switch">
