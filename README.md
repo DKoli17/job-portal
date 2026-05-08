@@ -7,7 +7,7 @@ A production-grade full-stack job portal built with **React**, **Node.js/Express
 ---
 ## Deployed via Vercel
 
-[Link](https://job-portal-eozx.vercel.app/)
+[Link]([https://job-portal-eozx.vercel.app/](https://job-portal-brjnzb5na-dkoli17s-projects.vercel.app))
 
 ## ✨ Features
 
