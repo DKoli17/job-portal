@@ -19,7 +19,7 @@ connectDB();
 // CORS — support local dev + deployed frontend URL
 const allowedOrigins = process.env.CLIENT_URL
   ? process.env.CLIENT_URL.split(',').map((o) => o.trim())
-  : ['https://job-portal-brjnzb5na-dkoli17s-projects.vercel.app'];
+  : ['https://job-portal-three-rust-32.vercel.app/'];
 
 app.use(cors({ origin: allowedOrigins, credentials: true }));
 app.use(express.json());
