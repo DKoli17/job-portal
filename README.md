@@ -7,7 +7,7 @@ A production-grade full-stack job portal built with **React**, **Node.js/Express
 ---
 ## Deployed via Vercel
 
-[Link](https://job-portal-three-rust-32.vercel.app/)
+[Link](https://job-portal-arjfb97iu-dkoli17s-projects.vercel.app)
 
 ## ✨ Features
 
